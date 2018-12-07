@@ -8,7 +8,7 @@
 <!--<link rel="stylesheet" href="css/unslider.css">
 <link rel="stylesheet" href="css/unslider-dots.css">-->
 <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" rel="stylesheet">
-<title>LandingPage Shop</title>
+<title>Design Studio</title>
 <!-- кроссбраузерное решение для IE 8-->
 <!--[if it IE 9]>
 	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -33,272 +33,344 @@
                 </div>
             </div>
         </div>-->
-	<header class="header">
-		<h1 class="header_logo"><a href="index.html"><em>DESIGN</em><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>STUDIO</em></a>
-		</h1>		
-			<ul class="header_menu">
-				<li class="home"><a href="index.html">home</a></li>
-				<li class="header_menu-service" id="menu-service"><a href="#all_services">services</a>
-					<ul id="services" class="levalOne-parent">
-						<!--
-                <li class="levelOne-child">
-                  <a class="levelOne-item">Допроектная стадия</a>
-                  <ul class="levelTwo-parent">
-                    <li class="levelTwo-child">
-                      <a class="levelTwo-item" href="modal-content">Обмер объекта</a>
-                    </li>
-                    <li>
-                      <a ...
-                -->
-					</ul>
-				</li>
-				<li class="header_menu-repair"><a href="#repair">repair</a></li>
-				<li class="header_menu-turnkey-design"><a href="#turnkey_design">turnkey design</a></li>
-				<li class="header_menu-ordering"><a href="#subscribe">place your order</a></li>
-				<li class="header_menu-portfolio"><a href="#">portfolio</a></li>
-				<li class="header_menu-contacts"><a href="#contacts">contacts</a></li>
-			</ul>		
-		
-			<form action="" method="get" name="search-form" class="header_search">
-				<div class="header_search-field">
-					<input type="search" name="s" placeholder="Search...">
-					<button class="header_search-zoom"></button>
-				</div>
-			</form>
-		
-	</header>
+<!----------------------H E A D E R --------------------->
+<header class="header">
+	<h1 class="header_logo"><a href="index.html"><em>design</em><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>studio</em></a>
+	</h1>
+	<nav class="header_menu">
+		<ul class="header_menu-block">
+			<li class="header_menu-block--item"><a href="index.html">home</a></li>
+			<li class="header_menu-block--item" id="menu-service"><a href="#all_services">services</a>
+				<ul id="services" class="levalOne-parent">
+					<!--
+	        <li class="levelOne-child">
+	          <a class="levelOne-item">Допроектная стадия</a>
+	          <ul class="levelTwo-parent">
+	            <li class="levelTwo-child">
+	              <a class="levelTwo-item" href="modal-content">Обмер объекта</a>
+	            </li>
+	            <li>
+	              <a ...
+	        -->
+				</ul>
+			</li>
+			<li class="header_menu-block--item"><a href="#repair">repair</a></li>
+			<li class="header_menu-block--item"><a href="#turnkey_design">turnkey design</a></li>
+			<li class="header_menu-block--item"><a href="#subscribe">place your order</a></li>
+			<li class="header_menu-block--item"><a href="#portfolio">portfolio</a></li>
+			<li class="header_menu-block--item"><a href="#contacts">contacts</a></li>
+		</ul>
+	</nav>	
+	<form action="" method="get" name="search-form" class="header_search">
+		<div class="header_search-field">
+			<input type="search" name="s" placeholder="Search...">
+			<button class="header_search-zoom"></button>
+		</div>
+	</form>	
+</header>
+<!----------------------S L I D E R --------------------->
 <div class="slider">
-    <div class="slider-arrows" id="backArrow">
+    <div class="slider_arrows" id="backArrow">
         <img src="./img/elements/arrow-back48grey.png" alt="" onclick="slider.left();">
     </div>
-    <div id="src" class="slider-photo"></div>        
-    <div class="slider-arrows" id="forwardArrow">
+    <div id="src" class="slider_photo">
+    	<!---------------C O N T A C T -- B L O C K-------------->
+	    <div class="order">
+	    	<header>
+	    		<h2>Place your order</h2>
+	    	</header>
+			<form class="order_form" action="" method="post" name="order_form">
+				<input class="order_form-email" type="email" name="" placeholder="your e-mail...">
+	            <input class="order_form-email" type="tel" name="" placeholder="your phone...">
+				<textarea class="order_form-text" placeholder="your text..."></textarea>
+				<input class="order_form-submit" type="submit" name="" value="Send">
+			</form>
+		</div>
+	</div>        
+    <div class="slider_arrows" id="forwardArrow">
         <img src="./img/elements/arrow-forward48grey.png" alt="" onclick="slider.right();">
     </div>
 </div>
-	
-<main id="all_services" class="all_services wrapper">
-	<h2>SERVICES</h2>
-	<div class="main-block">
+<!-------------------S E R V I C E S--------------------->	
+<main id="all_services" class="all_services">
+	<header>
+		<h2>SERVICES</h2>
+		<div class="line"><hr></div>
+	</header>	
+	<div class="main-block wrapper">
 		<aside class="filters">
 			<h2>Services filter</h2>
 			<div class="filter">
-				<h2>
-				<a href="#">Filter-1</a>
-			</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing, vivamus congue nulla leo, quis imperdiet magna.</p>
-			</div>
-			<div class="filter">
-				<h2>
-				<a href="#">Filter-2</a>
-			</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing, vivamus congue nulla leo, quis imperdiet magna.</p>
-			</div>
-			<div class="filter">
-				<h2>
-				<a href="#">Filter-3</a>
-			</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing, vivamus congue nulla leo, quis imperdiet magna.</p>
-			</div>	
+				<div class="filter_item">
+					<input type="checkbox" class="filter_item-sizing" id="sortByPrice" value="">sizing
+				</div>
+				<div class="filter_item">
+					<input type="checkbox" class="filter_item-Pstage" id="sortByAddress" value="">new projects
+				</div>
+				<div class="filter_item">
+					<input type="checkbox" class="filter_item-3D" id="sortByPrice" value="">3D - models
+				</div>
+				<div class="filter_item">
+					<input type="checkbox" class="filter_item-consulting" id="sortByAddress" value="">consulting
+				</div>
+				<div class="filter_item">
+					<input type="checkbox" class="filter_item-free" id="sortByPrice" value="">free services
+				</div>				          
+			</div>			
 		</aside>
-		<div class="services">
-			<article class="service">
+		<section class="items services">
+			<article class="item service">
 				<img src="./img/img31.jpg" alt="">
-			<h2>
-				<a href="#">FOOTBALL SHOES</a>
-			</h2>
+			<h2>Duis irure dolor</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing, vivamus congue nulla leo, quis imperdiet magna.</p>
 			</article>
-			<article class="service">
+			<article class="item service">
 				<img src="./img/img32.jpg" alt="">
-			<h2>
-				<a href="#">MODERN CLOTHES</a>
-			</h2>
+			<h2>Jnlk dolor</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing, vivamus congue nulla leo, quis imperdiet magna.</p>
 			</article>
-			<article class="service">
+			<article class="item service">
 				<img src="./img/img33.jpg" alt="">
-			<h2>
-				<a href="#">BAGS & ACCESSORIES</a>
-			</h2>
+			<h2>Duis aute irure </h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing, vivamus congue nulla leo, quis imperdiet magna.</p>
 			</article>
-			<article class="service">
+			<article class="item service">
 				<img src="./img/img32.jpg" alt="">
 			<h2>
-				<a href="#">MODERN CLOTHES</a>
+				Aaute irure dolor
 			</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing, vivamus congue nulla leo, quis imperdiet magna.</p>
 			</article>
-			<article class="service">
+			<article class="item service">
 				<img src="./img/img31.jpg" alt="">
-			<h2>
-				<a href="#">FOOTBALL SHOES</a>
+			<h2>Duis aute irure
 			</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing, vivamus congue nulla leo, quis imperdiet magna.</p>
 			</article>
-			<article class="service">
+			<article class="item service">
 				<img src="./img/img32.jpg" alt="">
-			<h2>
-				<a href="#">MODERN CLOTHES</a>
+			<h2>Mrure dolor
 			</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing, vivamus congue nulla leo, quis imperdiet magna.</p>
 			</article>
-			<article class="service">
+			<article class="item service">
 				<img src="./img/img33.jpg" alt="">
-			<h2>
-				<a href="#">BAGS & ACCESSORIES</a>
+			<h2>Grure dolor
 			</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing, vivamus congue nulla leo, quis imperdiet magna.</p>
 			</article>
-			<article class="service">
+			<article class="item service">
 				<img src="./img/img32.jpg" alt="">
-			<h2>
-				<a href="#">MODERN CLOTHES</a>
+			<h2>Duis auter
 			</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing, vivamus congue nulla leo, quis imperdiet magna.</p>
+			</article>
+		</section>
+	</div>
+</main>
+<!-----------------------R E P A I R--------------------->
+<section id="repair" class="repair">
+	<header>
+		<h2>REPAIR</h2>
+		<div class="line"><hr></div>
+	</header>
+	<div class="wrapper">
+		<div class="articles">
+			<article class="article">
+				<h4>Lorem ipsum dolor sit amet</h4>
+				 <figure class="article_img">	 	
+				 	<img src="./img/first-photo.jpg" alt="Chon Se Guyn photo">
+				 	<figcaption>Чон Се Гюн (Фото: Kim Hong-Ji / Reuters)</figcaption>
+				 </figure>
+				 <div class="article_text">
+				 	<p><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </b></p>
+				 	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				 </div>
+				 <footer class="follow">
+					<span class="price">low</span>					
+				</footer>
+			</article>
+			<article class="article">
+				<h4> Lorem consectetur adipiscing </h4>
+				<figure class="article_img">					
+					<img src="./img/gallery/1.jpg" alt="Chon Se Guyn photo">
+					<figcaption>Чон Се Гюн (Фото: Kim Hong-Ji / Reuters)</figcaption>
+				</figure>
+				<div class="article_text">
+					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p><cite> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </cite>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<p><b>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <cite>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</b></cite>,he said.</b></p>
+				</div>
+				<footer class="follow">
+					<span class="price">medium</span>					
+				</footer>
+			</article>
+			<article class="article">
+				<h4>Lorem ipsum dolor sit amet</h4>
+				<figure class="article_img">					
+					<img src="./img/gallery/2.jpg" alt="Chon Se Guyn photo">
+					<figcaption>Чон Се Гюн (Фото: Kim Hong-Ji / Reuters)</figcaption>
+				</figure>
+				<div class="article_text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <b>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+	     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</b></p>
+	     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+	     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				</div>
+				<footer class="follow">
+					<span class="price">high</span>					
+				</footer>	
 			</article>
 		</div>
 	</div>
-</main>
-<section id="repair" class="repair">
-	<h2>REPAIR</h2>
-	<div class="wrapper">
-		<div class="articles">
-		<article class="article">
-			 <h2>Lorem ipsum dolor sit amet</h2>
-			 
-			 <p class="fl"><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </b></p>
-			 <p><figure><img src="./img/first-photo.jpg" alt="Chon Se Guyn photo">
-			 <figcaption>Чон Се Гюн (Фото: Kim Hong-Ji / Reuters)</figcaption>
-			 </figure> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		</article>
-
-		<article class="article">
-			 <h2> Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
-			 <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		 <p><figure><img src="./img/first-photo.jpg" alt="Chon Se Guyn photo">
-			 <figcaption>Чон Се Гюн (Фото: Kim Hong-Ji / Reuters)</figcaption>
-			 </figure><cite> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </cite>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		 <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		 <cite>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</cite>,he said.</p>
-		</article>
-
-		<article class="article">
-		 <p>Lorem ipsum dolor sit amet</p>
-		 <p><figure><img src="./img/first-photo.jpg" alt="Chon Se Guyn photo">
-		 <figcaption>Чон Се Гюн (Фото: Kim Hong-Ji / Reuters)</figcaption>
-		 </figure> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		 <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		 <p>Athor: Eduard Bedratyi.</p>
-		</article>
-	</div>
-	</div>
 </section>
+<!---------------T U R N K E Y -- D E S I G N ----------->
 <section id="turnkey_design" class="turnkey_design">
-	<h2>TURNKEY DESIGN</h2>
+	<header>
+		<h2>TURNKEY DESIGN</h2>
+		<div class="line"><hr></div>
+	</header>	
 	<div class="wrapper">
 		<div class="row">
 			<article class="col">
-				<img src="./img/img41.jpg" alt="">			
-				<div class="title">
-					<h2>Nike Tailwind Loose</h2>
-					<h3>Running Tank Top</h3>
-				</div>
+				<figure>
+					<img src="./img/img41.jpg" alt="">
+					<figcaption class="title">
+						<h3>The best of the bathroom</h3>
+						<div class="line"><hr></div>
+					</figcaption>
+				</figure>						
 				<div class="dscptn">
 					<p>The Nike Tailwind Loose Women's Running Tank Top is made with sweat-wicking fabric to help you stay dry and comfortable on your run.</p>
-				</div>
-				<div class="follow">
-					<span class="price">$ 36.99</span>
-					<span class="basket-btn"><a href="#"><img src="./img/ico-plus.jpg" alt=""></a></span>
-				</div>			
+				</div>						
 			</article>
 			<article class="col">
-				<img src="./img/img42.jpg" alt="">
-				<div class="title">
-					<h2>Nike Tailwind Loose</h2>
-					<h3>Running Tank Top</h3>
-				</div>
+				<figure>
+					<img src="./img/img42.jpg" alt="">
+					<figcaption class="title">
+						<h3>The art at your kitchen</h3>
+						<div class="line"><hr></div>
+					</figcaption>
+				</figure>				
 				<div class="dscptn">
 					<p>The Nike G87 Women's Training Tank Top features soft, sweat-wicking fabric and a regular fit for total comfort during any workout.</p>
 				</div>
-				<div class="follow">
-					<span class="price">$ 36.99</span>
-					<span class="basket-btn"><a href="#"><img src="./img/ico-plus.jpg" alt=""></a></span>
-				</div>
 			</article>
 			<article class="col">
-				<img src="./img/img43.jpg" alt="">
-				<div class="title">
-					<h2>Nike Tailwind Loose</h2>
-					<h3>Running Tank Top</h3>
-				</div>
+				<figure>
+					<img src="./img/img43.jpg" alt="">
+					<figcaption class="title">
+						<h3>Spare space at home</h3>
+						<div class="line"><hr></div>
+					</figcaption>
+				</figure>				
 				<div class="dscptn">
 					<p>The Nike Lux Women's Running Top is made with lightweight Dri-FIT fabric and features a perforated back panel for comfort and enhanced breathability.</p>
-				</div>
-				<div class="follow">
-					<span class="price">$ 36.99</span>
-					<span class="basket-btn"><a href="#"><img src="./img/ico-plus.jpg" alt=""></a></span>
-				</div>	
+				</div>				
 			</article>
 			<article class="col">
-				<img src="./img/img44.jpg" alt="">
-				<div class="title">
-					<h2>Nike Tailwind Loose</h2>
-					<h3>Running Tank Top</h3>
-				</div>
+				<figure>
+					<img src="./img/img44.jpg" alt="">
+					<figcaption class="title">
+						<h3>Everybody in light room</h3>
+						<div class="line"><hr></div>
+					</figcaption>
+				</figure>				
 				<div class="dscptn">
 					<p>The Nike Lux Women's Running Top is made with lightweight Dri-FIT fabric and features a perforated back panel for comfort and enhanced breathability. The Nike Lux Women's Running Top is made with lightweight Dri-FIT fabric and features a perforated back panel for comfort and enhanced breathability.
 					</p>
-				</div>
-				<div class="follow">
-					<span class="price">$ 36.99</span>
-					<span class="basket-btn"><a href="#"><img src="./img/ico-plus.jpg" alt=""></a></span>
-				</div>	
+				</div>				
 			</article>
 	    </div>
 	</div>
 </section>
-<div id="contacts" class="about wrapper">
-	<article class="timeTable">
-	  <h2>About us & our contacts</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dictum lectus sit amet varius pulvinar. Proin vitae 
-dui tincidunt nibh facilisis pellentesque.  Fusce tortor turpis, facilisis ut condimentum eu, sagittis at est.</p>
-	<p>Praesent egestas posuere urna a egestas. Maecenas facilisis orci vitae ante  tempor accumsan. Aenean aliquam 
-justo ac sagittis vehicula. Nam mattis pretium odio sit amet vulputate.</p>
-	<p>Quisque non lobortis orci. Morbi augue mauris, ultrices at fermentum ac, consequat vitae magna. Pellentesque 
-non cursus mi, eu cursus nunc. Nullam  et odio tristique, volutpat urna vitae, dignissim orci. Fusce eu nulla urna.
-This template was created by Erik Padamans.</p>
-	<p>Praesent egestas posuere urna a egestas. Maecenas facilisis orci vitae ante  tempor accumsan. Aenean aliquam 
-justo ac sagittis vehicula. Nam mattis pretium odio sit amet vulputate.</p>
-	</article>
-	<div class="map">
-		<div class="mapin">
-			<!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2539.8253481857173!2d30.50287811592671!3d50.462976894342894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce69366062f9%3A0x874fbc6ba3fe7a4e!2z0YPQuy4g0JPQu9GD0LHQvtGH0LjRhtC60LDRjywgNzIsINCa0LjQtdCyLCAwMjAwMA!5e0!3m2!1sru!2sua!4v1531152101426"  frameborder="0" allowfullscreen>	
-			</iframe>-->
-        <img src="./img/Glubochitskaya_72.png" alt="Ukraine, Kiev, Glubochitskaya street 72, Podol.">
-	    </div>
-    </div>
-</div>
+<!---------------------P O R T F O L I O----------------->
+<section id="portfolio" class="portfolio">
+	<header>
+		<h2>portfolio</h2>
+		<div class="line"><hr></div>
+	</header>	
+	<div class="wrapper">		
+		<div class="gallery">
+	      <div class="col">
+	         <a href="./img/gallery/large/1.jpg"><img src="./img/gallery/eb08.jpg" alt=""></a>
+	      </div>
+	      <div class="col">
+	        <a href="./img/gallery/large/2.jpg"><img src="./img/gallery/lobak.jpg" alt=""></a>
+	      </div>
+	      <div class="col">
+	        <a href="./img/gallery/large/3.jpg"><img src="./img/gallery/sb70.jpg" alt=""></a>
+	      </div>
+	      <div class="col">
+	        <a href="./img/gallery/large/4.jpg"><img src="./img/gallery/сн342.jpg" alt=""></a>
+	      </div>
+	      <div class="col">
+	        <a href="./img/gallery/large/5.jpg"><img src="./img/gallery/фж24.jpg" alt=""></a>
+	      </div>
+	      <div class="col">
+	         <a href="./img/gallery/large/6.jpg"><img src="./img/gallery/eb08.jpg" alt=""></a>
+	      </div>
+	      <div class="col">
+	        <a href="./img/gallery/large/7.jpg"><img src="./img/gallery/422.jpg" alt=""></a>
+	      </div>
+	      <div class="col">
+	        <a href="./img/gallery/large/8.jpg"><img src="./img/gallery/lobak.jpg" alt=""></a>
+	      </div>
+	    </div><!-- //img-list -->
 
-<div id="subscribe" class="subscribe">
+	    <div class="lightbox">
+      <div class="overlay"></div>
+      <figure>
+      	<div class="prev">PREV</div>      	     
+        <div class="next">NEXT</div> 
+        <img src="#">          
+      </figure>
+    </div><!-- //lightbox -->    
+</div>
+</section>
+
+<!------------------------A B O U T --------------------->
+<section id="contacts" class="contacts">
+	<header>
+		<h2>ABOUT us & our CONTACTS</h2>
+		<div class="line"><hr></div>
+	</header>	
 	<div class="wrapper">
-		<h2><strong>Sign up</strong> and place your order</h2>
-		<div class="subscribe-form">
-			<form action="" method="get">
-				<input type="email" class="email-inpt" placeholder="email@address.com">
-				<input type="submit" class="submit-inpt" value="sign up">
-			</form>
-		</div>	
+		<div class="about">
+			<article class="timeTable">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dictum lectus sit amet varius pulvinar. Proin vitae 
+			dui tincidunt nibh facilisis pellentesque.  Fusce tortor turpis, facilisis ut condimentum eu, sagittis at est.</p>
+				<p>Praesent egestas posuere urna a egestas. Maecenas facilisis orci vitae ante  tempor accumsan. Aenean aliquam 
+			justo ac sagittis vehicula. Nam mattis pretium odio sit amet vulputate.</p>
+				<p>Quisque non lobortis orci. Morbi augue mauris, ultrices at fermentum ac, consequat vitae magna. Pellentesque 
+			non cursus mi, eu cursus nunc. Nullam  et odio tristique, volutpat urna vitae, dignissim orci. Fusce eu nulla urna.
+			This template was created by Erik Padamans.</p>
+				<address>
+					Address information posuere urna a egestas. Maecenas facilisis orci vitae ante  tempor accumsan. Aenean aliquam 
+			justo ac sagittis vehicula. Nam mattis pretium odio sit amet vulputate.
+				</address>
+			</article>
+			<div class="map">
+				<div class="mapin">
+					<!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2539.8253481857173!2d30.50287811592671!3d50.462976894342894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce69366062f9%3A0x874fbc6ba3fe7a4e!2z0YPQuy4g0JPQu9GD0LHQvtGH0LjRhtC60LDRjywgNzIsINCa0LjQtdCyLCAwMjAwMA!5e0!3m2!1sru!2sua!4v1531152101426"  frameborder="0" allowfullscreen>	
+					</iframe>-->
+			        <img src="./img/Glubochitskaya_72.png" alt="Ukraine, Kiev, Glubochitskaya street 72, Podol.">
+			    </div>
+		    </div>
+		</div>
 	</div>
-</div>
-
-<footer class="ftr">
+</section>
+<!--------------------S U B S C R I B E ----------------->
+<section id="subscribe" class="subscribe">
+	<div class="wrapper">
+		<h2><strong>Sign up</strong> and place your order</h2>	
+		<form action="" method="post" class="subscribe_form">
+			<input type="email" class="subscribe_form-email" name="email" placeholder="email@address.com">
+			<input type="submit" class="subscribe_form-submit" name="submit" value="sign up">
+		</form>		
+	</div>
+</section>
+<!----------------------F O O T E R --------------------->
+<footer class="footer">
 	<div class="items">
 		<article class="item office">
 			<h2 class="office_header">our office</h2>
@@ -307,10 +379,10 @@ justo ac sagittis vehicula. Nam mattis pretium odio sit amet vulputate.</p>
                 <p>100 Fairview Drive Franklin, VA 23851 (757) 569-6100 </p>
 			</div>
 		</article>
-		<article class="item portfolio">
-			<h2 class="portfolio_header">portfolio</h2>
-			<div class="portfolio_content">
-				<h3><a href="#">Justin Bieber confirmed that he is gay.</a></h3>
+		<article class="item news">
+			<h2 class="news_header">news</h2>
+			<div class="news_content">
+				<h3><a href="#">Justin Bieber confirmed that he is ...</a></h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed auctor elit.</p>
 				<h3><a href="#">New sexy sport clothes are here!</a></h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed auctor elit.</p>
@@ -319,33 +391,21 @@ justo ac sagittis vehicula. Nam mattis pretium odio sit amet vulputate.</p>
 			</div>
 		</article>
 		<article class="item support">
-			<h2 class="support_header">repair</h2>
+			<h2 class="support_header">support</h2>
 			<div class="support_content">
-				<p class="text-block">
-					<a href="">first</a>
-					<a href="">second</a>
-					<a href="">third</a>
-					<a href="">fourth</a>
-					<a href="">fifth</a>
-				</p>
-				<p class="text-block">
-					<a href="">sixth</a>
-					<a href="">seventh</a>
-					<a href="">eigth</a>
-					<a href="">nineth</a>
-				</p>
+				Lorem ipsum dolor sit amet, consecteturconsectetur adipiscing elit. Donec sed auctor elit. 
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed auctor elit.
 			</div>
 		</article>
-		<article class="item contact">
-			<h2 class="contact_header">contact us</h2>
-			<div class="contact_content">
-				<form action="" method="get">
-					<input type="email" class="contact_content-form" placeholder="your e-mail...">
-					<textarea class="contact_content-form" placeholder="your text..."></textarea>
-					<input type="submit" class="contact_content-submit" value="Send MESSAGE">
+		<article class="item contactUs">
+			<h2 class="contact_header">contact us</h2>			
+				<form action="" method="post" class="contactUs_form">
+					<input type="email" class="contactUs_form-email" name="email" placeholder="your e-mail...">
+					<textarea class="contactUs_form-text" placeholder="your text..."></textarea>
+					<input type="submit" class="contactUs_form-submit" name="submit" value="Send MESSAGE">
 				</form>
 				
-			</div>
+			
 		</article>
 		
 		<div class="social wrapper">
@@ -354,11 +414,13 @@ justo ac sagittis vehicula. Nam mattis pretium odio sit amet vulputate.</p>
             <span class="social_drop"><a href="http://linkedin.com"><img src="img/elements/li32.png" alt="linkedin.com"></a></span>
             <span class="social_drop"><a href="http://twitter.com"><img src="img/elements/tw32.png" alt="twitter.com"></a></span>		        
 		</div>
-
-	</div>	
+	</div>
+	<p>&copy; 2018 «Unregistred nowhere»</p>
 </footer>
 <!--<script src="js/equalHeight.js"></script>-->
+<script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/slider.js"></script>
 <script src="js/all.js"></script>
+<script src="js/functions.js"></script>
 </body>
 </html>
