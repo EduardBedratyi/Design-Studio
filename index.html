@@ -35,14 +35,14 @@
         </div>-->
 <!----------------------H E A D E R --------------------->
 <header class="header">
-	<h1 class="header_logo"><a href="index.html"><em>design</em><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>studio</em></a>
+	<h1 class="logo"><a href="index.html"><em>design</em><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>studio</em></a>
 	</h1>
-	<nav class="header_menu">
-		<ul class="header_menu-block">
-			<li class="header_menu-block--item"><a href="index.html">home</a></li>
-			<li class="header_menu-block--item" id="menu-service"><a href="#all_services">services</a>
+	<nav class="nav">
+		<ul class="menu">
+			<li class="menu_item"><a href="index.html" class="menu_item-link">home</a></li>
+			<li class="menu_item" id="menu-service"><a href="#all_services" class="menu_item-link">services</a>
 				<ul id="services" class="levalOne-parent">
-					<!--
+				<!--	
 	        <li class="levelOne-child">
 	          <a class="levelOne-item">Допроектная стадия</a>
 	          <ul class="levelTwo-parent">
@@ -54,17 +54,17 @@
 	        -->
 				</ul>
 			</li>
-			<li class="header_menu-block--item"><a href="#repair">repair</a></li>
-			<li class="header_menu-block--item"><a href="#turnkey_design">turnkey design</a></li>
-			<li class="header_menu-block--item"><a href="#subscribe">place your order</a></li>
-			<li class="header_menu-block--item"><a href="#portfolio">portfolio</a></li>
-			<li class="header_menu-block--item"><a href="#contacts">contacts</a></li>
+			<li class="menu_item"><a href="#repair" class="menu_item-link">repair</a></li>
+			<li class="menu_item"><a href="#turnkey_design" class="menu_item-link">turnkey design</a></li>
+			<li class="menu_item"><a href="#subscribe" class="menu_item-link">place your order</a></li>
+			<li class="menu_item"><a href="#portfolio" class="menu_item-link">portfolio</a></li>
+			<li class="menu_item"><a href="#contacts" class="menu_item-link">contacts</a></li>
 		</ul>
 	</nav>	
-	<form action="" method="get" name="search-form" class="header_search">
-		<div class="header_search-field">
-			<input type="search" name="s" placeholder="Search...">
-			<button class="header_search-zoom"></button>
+	<form action="" method="get" name="search-form" class="search">
+		<div class="search_field">
+			<input type="search" name="s" class="search_field-input" placeholder="Search...">
+			<button class="search_field-zoom"></button>
 		</div>
 	</form>	
 </header>
@@ -74,16 +74,16 @@
         <img src="./img/elements/arrow-back48grey.png" alt="" onclick="slider.left();">
     </div>
     <div id="src" class="slider_photo">
-    	<!---------------C O N T A C T -- B L O C K-------------->
-	    <div class="order">
-	    	<header>
-	    		<h2>Place your order</h2>
-	    	</header>
-			<form class="order_form" action="" method="post" name="order_form">
-				<input class="order_form-email" type="email" name="" placeholder="your e-mail...">
-	            <input class="order_form-email" type="tel" name="" placeholder="your phone...">
-				<textarea class="order_form-text" placeholder="your text..."></textarea>
-				<input class="order_form-submit" type="submit" name="" value="Send">
+    	<!---------------O R D E R -- T O P-------------->
+	    <div class="order_top">	    	
+			<form class="form" action="" method="post" name="order_form">
+				<header class="form_header">
+					<h2>Place your order</h2>
+				</header>
+				<input class="form_email" type="email" name="" placeholder="your e-mail...">
+	            <input class="form_phone" type="tel" name="" placeholder="your phone...">
+				<textarea class="form_text" placeholder="your text..."></textarea>
+				<input class="form_submit" type="submit" name="" value="Send">
 			</form>
 		</div>
 	</div>        
@@ -92,132 +92,130 @@
     </div>
 </div>
 <!-------------------S E R V I C E S--------------------->	
-<main id="all_services" class="all_services">
-	<header>
+<main id="all_services" class="services">
+	<header class="header_a">
 		<h2>SERVICES</h2>
 		<div class="line"><hr></div>
 	</header>	
 	<div class="main-block wrapper">
-		<aside class="filters">
-			<h2>Services filter</h2>
-			<div class="filter">
-				<div class="filter_item">
-					<input type="checkbox" class="filter_item-sizing" id="sortByPrice" value="">sizing
-				</div>
-				<div class="filter_item">
-					<input type="checkbox" class="filter_item-Pstage" id="sortByAddress" value="">new projects
-				</div>
-				<div class="filter_item">
-					<input type="checkbox" class="filter_item-3D" id="sortByPrice" value="">3D - models
-				</div>
-				<div class="filter_item">
-					<input type="checkbox" class="filter_item-consulting" id="sortByAddress" value="">consulting
-				</div>
-				<div class="filter_item">
-					<input type="checkbox" class="filter_item-free" id="sortByPrice" value="">free services
-				</div>				          
-			</div>			
+		<aside class="filters">			
+			<h2 class="filters_subheader">Services filter</h2>			
+			<div class="filters_item">
+				<input type="checkbox" class="filters_item-sizing" id="sortByPrice" value="">sizing
+			</div>
+			<div class="filters_item">
+				<input type="checkbox" class="filters_item-Pstage" id="sortByAddress" value="">new projects
+			</div>
+			<div class="filters_item">
+				<input type="checkbox" class="filters_item-3D" id="sortByPrice" value="">3D - models
+			</div>
+			<div class="filters_item">
+				<input type="checkbox" class="filters_item-consulting" id="sortByAddress" value="">consulting
+			</div>
+			<div class="filters_item">
+				<input type="checkbox" class="filters_item-free" id="sortByPrice" value="">free services
+			</div>				          
 		</aside>
-		<section class="items services">
-			<article class="item service">
-				<img src="./img/img31.jpg" alt="">
+		<section class="row">
+			<article class="col">
+				<img src="./img/img31.jpg" class="col_img" alt="">
 			<h2>Duis irure dolor</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing, vivamus congue nulla leo, quis imperdiet magna.</p>
+			<p class="col_dscrpt">Lorem ipsum dolor sit amet, consectetur adipiscing, vivamus congue nulla leo, quis imperdiet magna.</p>
 			</article>
-			<article class="item service">
-				<img src="./img/img32.jpg" alt="">
+			<article class="col">
+				<img src="./img/img32.jpg" class="col_img" alt="">
 			<h2>Jnlk dolor</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing, vivamus congue nulla leo, quis imperdiet magna.</p>
+			<p class="col_dscrpt">Lorem ipsum dolor sit amet, consectetur adipiscing, vivamus congue nulla leo, quis imperdiet magna.</p>
 			</article>
-			<article class="item service">
-				<img src="./img/img33.jpg" alt="">
+			<article class="col">
+				<img src="./img/img33.jpg" class="col_img" alt="">
 			<h2>Duis aute irure </h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing, vivamus congue nulla leo, quis imperdiet magna.</p>
+			<p class="col_dscrpt">Lorem ipsum dolor sit amet, consectetur adipiscing, vivamus congue nulla leo, quis imperdiet magna.</p>
 			</article>
-			<article class="item service">
-				<img src="./img/img32.jpg" alt="">
+			<article class="col">
+				<img src="./img/img32.jpg" class="col_img" alt="">
 			<h2>
 				Aaute irure dolor
 			</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing, vivamus congue nulla leo, quis imperdiet magna.</p>
+			<p class="col_dscrpt">Lorem ipsum dolor sit amet, consectetur adipiscing, vivamus congue nulla leo, quis imperdiet magna.</p>
 			</article>
-			<article class="item service">
-				<img src="./img/img31.jpg" alt="">
+			<article class="col">
+				<img src="./img/img31.jpg" class="col_img" alt="">
 			<h2>Duis aute irure
 			</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing, vivamus congue nulla leo, quis imperdiet magna.</p>
+			<p class="col_dscrpt">Lorem ipsum dolor sit amet, consectetur adipiscing, vivamus congue nulla leo, quis imperdiet magna.</p>
 			</article>
-			<article class="item service">
-				<img src="./img/img32.jpg" alt="">
+			<article class="col">
+				<img src="./img/img32.jpg" class="col_img" alt="">
 			<h2>Mrure dolor
 			</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing, vivamus congue nulla leo, quis imperdiet magna.</p>
+			<p class="col_dscrpt">Lorem ipsum dolor sit amet, consectetur adipiscing, vivamus congue nulla leo, quis imperdiet magna.</p>
 			</article>
-			<article class="item service">
-				<img src="./img/img33.jpg" alt="">
+			<article class="col">
+				<img src="./img/img33.jpg" class="col_img" alt="">
 			<h2>Grure dolor
 			</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing, vivamus congue nulla leo, quis imperdiet magna.</p>
+			<p class="col_dscrpt">Lorem ipsum dolor sit amet, consectetur adipiscing, vivamus congue nulla leo, quis imperdiet magna.</p>
 			</article>
-			<article class="item service">
-				<img src="./img/img32.jpg" alt="">
-			<h2>Duis auter
+			<article class="col">
+				<img src="./img/img32.jpg" class="col_img" alt="">
+			<h2 class="col_title">Duis auter
 			</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing, vivamus congue nulla leo, quis imperdiet magna.</p>
+			<p class="col_dscrpt">Lorem ipsum dolor sit amet, consectetur adipiscing, vivamus congue nulla leo, quis imperdiet magna.</p>
 			</article>
 		</section>
 	</div>
 </main>
 <!-----------------------R E P A I R--------------------->
 <section id="repair" class="repair">
-	<header>
+	<header class="header_a">
 		<h2>REPAIR</h2>
 		<div class="line"><hr></div>
 	</header>
 	<div class="wrapper">
-		<div class="articles">
-			<article class="article">
+		<div class="row">
+			<article class="col">
 				<h4>Lorem ipsum dolor sit amet</h4>
-				 <figure class="article_img">	 	
-				 	<img src="./img/first-photo.jpg" alt="Chon Se Guyn photo">
-				 	<figcaption>Чон Се Гюн (Фото: Kim Hong-Ji / Reuters)</figcaption>
+				 <figure class="col_img">	 	
+				 	<img src="./img/first-photo.jpg" class="col_img-image" alt="Chon Se Guyn photo">
+				 	<figcaption class="col_img-sign">Чон Се Гюн (Фото: Kim Hong-Ji / Reuters)</figcaption>
 				 </figure>
-				 <div class="article_text">
+				 <div class="col_text">
 				 	<p><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </b></p>
 				 	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				 </div>
-				 <footer class="follow">
-					<span class="price">low</span>					
+				 <footer class="col_follow">
+					<span class="price">low</span>			
 				</footer>
 			</article>
-			<article class="article">
+			<article class="col">
 				<h4> Lorem consectetur adipiscing </h4>
-				<figure class="article_img">					
-					<img src="./img/gallery/1.jpg" alt="Chon Se Guyn photo">
-					<figcaption>Чон Се Гюн (Фото: Kim Hong-Ji / Reuters)</figcaption>
+				<figure class="col_img">					
+					<img src="./img/gallery/1.jpg" class="col_img-image" alt="Chon Se Guyn photo">
+					<figcaption class="col_img-sign">Чон Се Гюн (Фото: Kim Hong-Ji / Reuters)</figcaption>
 				</figure>
-				<div class="article_text">
+				<div class="col_text">
 					<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 					<p><cite> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod </cite>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 					<p><b>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <cite>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</b></cite>,he said.</b></p>
 				</div>
-				<footer class="follow">
-					<span class="price">medium</span>					
+				<footer class="col_follow">
+					<span class="price">medium</span>
 				</footer>
 			</article>
-			<article class="article">
+			<article class="col">
 				<h4>Lorem ipsum dolor sit amet</h4>
-				<figure class="article_img">					
-					<img src="./img/gallery/2.jpg" alt="Chon Se Guyn photo">
-					<figcaption>Чон Се Гюн (Фото: Kim Hong-Ji / Reuters)</figcaption>
+				<figure class="col_img">					
+					<img src="./img/gallery/2.jpg" class="col_img-image" alt="Chon Se Guyn photo">
+					<figcaption class="col_img-sign">Чон Се Гюн (Фото: Kim Hong-Ji / Reuters)</figcaption>
 				</figure>
-				<div class="article_text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <b>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+				<div class="col_text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <b>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 	     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</b></p>
 	     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 	     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 				</div>
-				<footer class="follow">
-					<span class="price">high</span>					
+				<footer class="col_follow">
+					<span class="price">high</span>			
 				</footer>	
 			</article>
 		</div>
@@ -225,7 +223,7 @@
 </section>
 <!---------------T U R N K E Y -- D E S I G N ----------->
 <section id="turnkey_design" class="turnkey_design">
-	<header>
+	<header class="header_a">
 		<h2>TURNKEY DESIGN</h2>
 		<div class="line"><hr></div>
 	</header>	
@@ -285,52 +283,54 @@
 </section>
 <!---------------------P O R T F O L I O----------------->
 <section id="portfolio" class="portfolio">
-	<header>
+	<header class="header_a">
 		<h2>portfolio</h2>
 		<div class="line"><hr></div>
 	</header>	
 	<div class="wrapper">		
-		<div class="gallery">
+		<div class="row gallery">
 	      <div class="col">
-	         <a href="./img/gallery/large/1.jpg"><img src="./img/gallery/eb08.jpg" alt=""></a>
+	         <a href="./img/gallery/large/1.jpg" class="col_link"><img src="./img/gallery/eb08.jpg" class="col_link-image" alt=""></a>
 	      </div>
 	      <div class="col">
-	        <a href="./img/gallery/large/2.jpg"><img src="./img/gallery/lobak.jpg" alt=""></a>
+	        <a href="./img/gallery/large/2.jpg" class="col_link"><img src="./img/gallery/lobak.jpg" class="col_link-image" alt=""></a>
 	      </div>
 	      <div class="col">
-	        <a href="./img/gallery/large/3.jpg"><img src="./img/gallery/sb70.jpg" alt=""></a>
+	        <a href="./img/gallery/large/3.jpg" class="col_link"><img src="./img/gallery/sb70.jpg" class="col_link-image" alt=""></a>
 	      </div>
 	      <div class="col">
-	        <a href="./img/gallery/large/4.jpg"><img src="./img/gallery/сн342.jpg" alt=""></a>
+	        <a href="./img/gallery/large/4.jpg" class="col_link"><img src="./img/gallery/сн342.jpg" class="col_link-image" alt=""></a>
 	      </div>
 	      <div class="col">
-	        <a href="./img/gallery/large/5.jpg"><img src="./img/gallery/фж24.jpg" alt=""></a>
+	        <a href="./img/gallery/large/5.jpg" class="col_link"><img src="./img/gallery/фж24.jpg" class="col_link-image" alt=""></a>
 	      </div>
 	      <div class="col">
-	         <a href="./img/gallery/large/6.jpg"><img src="./img/gallery/eb08.jpg" alt=""></a>
+	         <a href="./img/gallery/large/6.jpg" class="col_link"><img src="./img/gallery/eb08.jpg" class="col_link-image" alt=""></a>
 	      </div>
 	      <div class="col">
-	        <a href="./img/gallery/large/7.jpg"><img src="./img/gallery/422.jpg" alt=""></a>
+	        <a href="./img/gallery/large/7.jpg" class="col_link"><img src="./img/gallery/422.jpg" class="col_link-image" alt=""></a>
 	      </div>
 	      <div class="col">
-	        <a href="./img/gallery/large/8.jpg"><img src="./img/gallery/lobak.jpg" alt=""></a>
+	        <a href="./img/gallery/large/8.jpg" class="col_link"><img src="./img/gallery/lobak.jpg" class="col_link-image" alt=""></a>
 	      </div>
 	    </div><!-- //img-list -->
 
 	    <div class="lightbox">
-      <div class="overlay"></div>
-      <figure>
-      	<div class="prev">PREV</div>      	     
-        <div class="next">NEXT</div> 
-        <img src="#">          
-      </figure>
-    </div><!-- //lightbox -->    
-</div>
+	    	<!--<div class="lightbox_overlay"></div>-->
+
+	    	<figure class="lightbox_img">
+	    		<img src="./img/elements/arrow-back48grey.png" class="lightbox_img-btn" id="prev" alt="">
+	    		<a href="#" title="закрыть" class="close"></a>
+	    		<img src="./img/elements/arrow-forward48.png" class="lightbox_img-btn" id="next" alt="">
+	    		<img src="#" class="lightbox_img-image">
+	    	</figure>
+	    </div><!-- //lightbox -->
+	</div>
 </section>
 
 <!------------------------A B O U T --------------------->
 <section id="contacts" class="contacts">
-	<header>
+	<header class="header_a">
 		<h2>ABOUT us & our CONTACTS</h2>
 		<div class="line"><hr></div>
 	</header>	
@@ -362,7 +362,7 @@
 <!--------------------S U B S C R I B E ----------------->
 <section id="subscribe" class="subscribe">
 	<div class="wrapper">
-		<h2><strong>Sign up</strong> and place your order</h2>	
+		<h2 class="subscribe_title"><strong>Sign up</strong> and place your order</h2>	
 		<form action="" method="post" class="subscribe_form">
 			<input type="email" class="subscribe_form-email" name="email" placeholder="email@address.com">
 			<input type="submit" class="subscribe_form-submit" name="submit" value="sign up">
@@ -371,17 +371,17 @@
 </section>
 <!----------------------F O O T E R --------------------->
 <footer class="footer">
-	<div class="items">
-		<article class="item office">
-			<h2 class="office_header">our office</h2>
-			<div class="office_content">
+	<div class="row">
+		<article class="col">
+			<h2 class="col_title">our office</h2>
+			<div class="col_content">
 				<p>Feel free to visit our stores or contact us. 1401 South Grand Avenue Los Angeles, CA 90015 (213) 748-2411</p>
                 <p>100 Fairview Drive Franklin, VA 23851 (757) 569-6100 </p>
 			</div>
 		</article>
-		<article class="item news">
-			<h2 class="news_header">news</h2>
-			<div class="news_content">
+		<article class="col">
+			<h2 class="col_title">news</h2>
+			<div class="col_content">
 				<h3><a href="#">Justin Bieber confirmed that he is ...</a></h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed auctor elit.</p>
 				<h3><a href="#">New sexy sport clothes are here!</a></h3>
@@ -390,19 +390,19 @@
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed auctor elit. </p>
 			</div>
 		</article>
-		<article class="item support">
-			<h2 class="support_header">support</h2>
+		<article class="col">
+			<h2 class="col_title">support</h2>
 			<div class="support_content">
 				Lorem ipsum dolor sit amet, consecteturconsectetur adipiscing elit. Donec sed auctor elit. 
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed auctor elit.
 			</div>
 		</article>
-		<article class="item contactUs">
-			<h2 class="contact_header">contact us</h2>			
-				<form action="" method="post" class="contactUs_form">
-					<input type="email" class="contactUs_form-email" name="email" placeholder="your e-mail...">
-					<textarea class="contactUs_form-text" placeholder="your text..."></textarea>
-					<input type="submit" class="contactUs_form-submit" name="submit" value="Send MESSAGE">
+		<article class="col">
+			<h2 class="col_title">contact us</h2>			
+				<form action="" method="post" class="form">
+					<input type="email" class="form_email" name="email" placeholder="your e-mail...">
+					<textarea class="form_text" placeholder="your text..."></textarea>
+					<input type="submit" class="form_submit" name="submit" value="Send MESSAGE">
 				</form>
 				
 			
